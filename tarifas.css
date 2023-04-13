@@ -1,0 +1,101 @@
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    
+    
+    
+        
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(hack.jpg);
+    background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: center;
+        color: aliceblue;
+       
+}
+
+h1{
+    margin-top: 1rem;
+    font-family: 'Courgette', cursive;
+    font-size: 3.5rem;
+    text-align: center;
+    color: aliceblue;
+}
+
+.contenedor-servicios{
+  display: flex;
+    width: 80%;
+    min-height: 100%;
+    margin: 1rem auto;
+    gap: 3rem;
+    text-align: center;
+  
+    border-radius: 2rem;
+}
+
+@media(max-width:468px ){
+
+    .contenedor-servicios{
+        display: block;
+    }
+     
+}
+
+
+
+.servicio{
+    margin: 2rem 2rem;
+}
+
+section{
+
+    background-color: rgba(18, 89, 119, 0.3);
+    border-radius: 1.5rem;
+    width: 40%;
+    height: 42.5rem;
+    
+    
+    
+    
+}
+
+.plan p {
+    font-size: 1.1rem;
+    line-height: 2.7rem;
+    text-align: justify;
+    
+}
+
+.icono--check {
+    color: #20dabb;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    
+    
+}
+
+.icono--none{
+    color: #ef6a87;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    
+}
+
+.boton{
+    border-radius: 1.5rem;
+    height: 3rem;
+    width: 6rem;
+    margin-bottom: 50rem;
+    background-color: #f8efed;
+    cursor: pointer;
+    font-family: sans-serif;
+}

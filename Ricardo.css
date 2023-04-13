@@ -1,0 +1,403 @@
+
+/*Globales*/
+
+body {
+    font-size: 16px;
+    background-image: linear-gradient(to top, #282543  0%, #ebdded 100%);
+font-family: 'Krub', sans-serif;
+
+
+}
+
+html {
+    font-size: 62.5%;
+    scroll-snap-type: y mandatory;
+   
+}
+
+/*Contenedor Global*/
+
+.contenedor-global{
+    max-width: 120rem;
+    
+    margin: 0 auto;
+}
+
+/*tipología*/
+
+h1{
+    text-align: center;
+    margin-top: 4rem;
+    color: #120907;
+    font-size: 4rem;
+    font-family: 'Courgette', cursive;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+span{
+    display: block;
+    margin-top: 1rem;
+}
+
+legend{
+    text-align: center;
+}
+
+@media(max-width: 480px) {
+    .legend {
+
+        text-align: left;
+
+    }
+
+}
+/*navegación*/
+.nav-bg{
+    
+background-color: #282543;
+margin-top: 7rem;
+margin : 0 auto;
+
+
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    
+    font-size: 2rem;
+    font-weight: bold;
+
+    
+    
+    
+    
+}
+
+nav a{
+text-decoration: none;
+color: #ebdded;
+padding: 2rem;
+
+}
+
+a:hover{
+    background-color:#a5a0e9;
+    
+}
+
+.lugar{
+background-image: url(code-web-development-php-wallpaper-preview.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: 380px;
+    position: relative;
+    scroll-snap-align: center;
+    scroll-snap-stop: proximity;
+}
+.lugarContenido{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        color: #ebdded;
+        text-align: center;
+        font-family: 'Courgette', cursive;
+}
+
+.lugar h2{
+    margin-top: 4rem;
+margin-bottom: 7rem;
+}
+.lugar p{
+    font-size: 2rem;
+}
+
+
+/*Servicios*/
+.contenedor-servicios{
+
+   display: grid;
+   grid-template-columns: 4fr;
+   width: 80%;
+   height: 75rem;
+   margin: 0 auto;
+   margin-top: 2rem;
+   background-color: #ebdded;
+   padding: 2rem;
+   border-radius: 1.5rem;
+   color: #120907;
+margin-top: 7rem;
+-webkit-box-shadow: 10px 12px 26px 2px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 10px 12px 26px 2px rgba(0, 0, 0, 0.56);
+    box-shadow: 10px 12px 26px 2px rgba(0, 0, 0, 0.56);
+    scroll-snap-align: center;
+        scroll-snap-stop: proximity;
+   
+}
+
+@media(max-width: 480px)
+
+/* mq estandar: 480px->telefono *, 768->tablet, 1140->laptop, 1440 */
+    {
+    .contenedor-servicios {
+        
+        display: block;
+        height: auto;
+    }
+}
+
+@media(min-width: 768px)
+
+    {
+    .contenedor-servicios {
+
+        
+        height: auto;
+    }
+
+    }
+     
+
+.contenedor-servicios h2{
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 6rem;
+    
+}
+
+.servicios{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -2rem;
+    gap: 40px;
+    
+
+}
+
+@media(max-width: 480px)
+
+    {
+    .servicios {
+
+        display: block;
+    }
+}
+
+.servicios h3{
+    font-weight: bold;
+}
+.servicios p {
+    text-align: justify;
+    font-size: 1.8rem;
+}
+
+
+
+
+.desarollo-web{
+    margin: 0 auto;
+}
+
+.icono{
+    font-size: 5rem;
+    background-color:#a5a0e9;
+    margin-left: 40%;
+    margin-right: 40%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10rem;
+  
+}
+
+@media(max-width: 480px) {
+    .icono {
+
+        margin-left: 33%;
+            margin-right: 33%;
+
+    }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+    .icono {
+
+
+        margin-left: 33%;
+            margin-right: 33%;
+    }
+
+}
+
+.resumen{
+    text-align: center;
+        margin: 0 auto;
+        padding: 2rem;
+        width: 60%;
+        margin-top: 7rem;
+    background-color: #a5a0e9;
+    height: 50rem;
+    border-radius: 1.5rem;
+    color: #120907;
+    -webkit-box-shadow: 10px 12px 26px 2px rgba(0, 0, 0, 0.56);
+        -moz-box-shadow: 10px 12px 26px 2px rgba(0, 0, 0, 0.56);
+        box-shadow: 10px 12px 26px 2px rgba(0, 0, 0, 0.56);
+        scroll-snap-align: center;
+            scroll-snap-stop: proximity;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px){
+    .resumen{
+        height: auto;
+    }
+}
+
+.resumen h2{
+font-weight: bold;
+    font-size: 3rem;
+}
+.resumen p{
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 4rem;
+    margin-top: 4rem;
+}
+
+.imagen{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    
+}
+
+.imagen2{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+    margin-top: 1rem;
+    
+    
+    
+}
+
+
+.motivacion{
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 4rem;
+    color:#ebdded;
+    scroll-snap-align: center;
+        scroll-snap-stop: proximity;
+    
+}
+.formulario {
+    width: 40%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color:#ebdded;
+    border-radius: 1.5rem;
+    margin-top: 7rem;
+    margin-bottom:7rem;
+    scroll-snap-align: center;
+        scroll-snap-stop: proximity;
+    
+}
+@media(max-width: 480px) {
+    .formulario {
+
+        width: 50%;
+
+    }
+
+}
+fieldset{
+    border: none;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.datos{
+    display: block;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+@media(max-width: 480px) {
+    .datos {
+
+        width: 80%;
+        text-align: left;
+
+    }
+
+}
+
+.campos{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: .2rem;
+    border:none;
+    
+    
+}
+
+.textarea{
+width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: .2rem;
+    border: none;
+    height: 20rem;
+}
+
+@media(max-width: 480px) {
+    .campos {
+
+        width: 80%;
+        
+    }
+
+    }
+
+.contacto{
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+input[type="submit"]{
+    height: 5rem;
+    width: 12rem;
+    font-family: 'Krub', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    background-color: #282543;
+    border-radius: 1rem;
+    color: #ebdded;
+    cursor: pointer;
+
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    
+}
